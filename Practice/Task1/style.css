@@ -1,6 +1,22 @@
-body {
-    text-align: center;
-}
+
 .square-text {
-    text-shadow: 2px 10px 10px black;
+    text-shadow: 2px 5px 5px black;
 }
+
+
+.img {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    box-shadow: 3px 3px 5px #000000; 
+    border: 2px solid #000000;
+}
+
+.square-text-2 {
+    color: #000000;
+    font-weight: 800;
+    font-size: 20px;
+    color: #EE82EE
+
+}
+
