@@ -30,3 +30,9 @@ body {
     height: 100px;
     background-color: bisque;
 }
+
+.sonson {
+    width: 50%;
+    height: 50px;
+    background-color: rgb(159, 60, 186);
+}
