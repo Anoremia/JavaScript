@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Task5.css"/>
+    <title>Профиль пользователя</title>
+</head>
+<body>
+<div class="user-info">
+    <img src="https://sun6-21.userapi.com/s/v1/ig2/APo2znV_exAVtJq_L4aHDINNFuEGAbj-xQCf7zcO6cwWM0zag4LuWUMkRhsVUenJbsJZDjjGxCyQnY6gdY-CjODg.jpg?size=400x0&quality=96&crop=144,2,1078,1078&ava=1" alt="Фотография пользователя">
+    <h2>Профиль пользователя</h2>
+    <div class="info-item">
+        <label for="name">Имя:</label>
+        <p id="name">Мяурицио</p>
+    </div>
+    <div class="info-item">
+        <label for="surname">Фамилия:</label>
+        <p id="surname">ди Мяуро</p>
+    </div>
+    <div class="info-item">
+        <label for="email">Email:</label>
+        <p id="email">mnyam.mnyam@kot.com</p>
+    </div>
+    <div class="info-item">
+        <label for="phone">Телефон:</label>
+        <p id="phone">+7 (999) 999-99-99</p>
+    </div>
+    <div class="info-item">
+        <label for="gender">Пол:</label>
+        <p id="gender">Мужской</p>
+    </div>
+    <div class="info-item">
+        <label for="city">Город:</label>
+        <p id="city">Мегаполис</p>
+    </div>
+    <div class="info-item">
+        <label for="address">Адрес:</label>
+        <p id="address">Замок Бубоника и Тирании</p>
+    </div>
+    <div class="info-item">
+        <label for="country">Страна:</label>
+        <p id="country">Канада</p>
+    </div>
+    <div class="info-item">
+        <label for="birthday">День рождения:</label>
+        <p id="birthday">05.01.2000</p>
+    </div>
+    <div class="info-item">
+        <label for="education">Образование:</label>
+        <p id="education">Высшее</p>
+    </div>
+    <div class="info-item">
+        <label for="profession">Профессия:</label>
+        <p id="profession">Кот</p>
+    </div>
+    <button class="edit-btn" onclick="openEditModal()">Редактировать</button>
+</div>
+
+<div class="edit-modal" id="editModal">
+    <div class="edit-modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2>Редактировать профиль</h2>
+
+        <label for="edit-name">Имя:</label>
+        <input type="text" id="edit-name" value="Мяурицио">
+
+        <label for="edit-surname">Фамилия:</label>
+        <input type="text" id="edit-surname" value="ди Мяуро">
+
+        <label for="edit-email">Email:</label>
+        <input type="email" id="edit-email" value="mnyam.mnyam@kot.com">
+
+        <label for="edit-phone">Телефон:</label>
+        <input type="tel" id="edit-phone" value="+7 (999) 999-99-99">
+
+        <label for="edit-gender">Пол:</label>
+        <select id="edit-gender">
+            <option value="Мужской">Мужской</option>
+            <option value="Женский">Женский</option>
+        </select>
+
+        <label for="edit-city">Город:</label>
+        <input type="text" id="edit-city" value="Мегаполис">
+
+        <label for="edit-address">Адрес:</label>
+        <input type="text" id="edit-address" value="Замок Бубоника и Тирании">
+
+        <label for="edit-country">Страна:</label>
+        <input type="text" id="edit-country" value="Канада">
+
+        <label for="edit-birthday">День рождения:</label>
+        <input type="date" id="edit-birthday" value="2000-01-05">
+
+        <label for="edit-education">Образование:</label>
+        <select id="edit-education">
+            <option value="Высшее">Высшее</option>
+            <option value="Среднее">Среднее</option>
+            <option value="Незаконченное высшее">Незаконченное высшее</option>
+        </select>
+
+        <label for="edit-profession">Профессия:</label>
+        <input type="text" id="edit-profession" value="Кот">
+
+        <button onclick="saveChanges()">Сохранить</button>
+    </div>
+</div>
+<script src="Task5.js"></script>
+</body>
+</html>
